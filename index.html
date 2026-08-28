@@ -75,7 +75,7 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1),opacity .4s}
 .card:hover img{transform:scale(1.035)}
 .card .cap{display:flex;justify-content:space-between;align-items:baseline;padding:14px 2px 0;gap:12px}
-.card .cap h3{font-family:var(--font-script);font-weight:400;font-size:clamp(26px,2.4vw,32px);line-height:1.2;color:var(--ink)}
+.card .cap h3{font-family:var(--font-display);font-weight:500;font-size:clamp(20px,1.9vw,24px);line-height:1.3;color:var(--ink)}
 .card .cap .idx{font-family:var(--font-display);font-style:italic;color:var(--purple);font-size:16px;white-space:nowrap}
 .card .tags{padding:6px 2px 0;color:var(--muted-dark);font-size:13px;letter-spacing:.02em}
 .card .act{margin-top:12px;display:flex;gap:10px}
@@ -86,7 +86,8 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .c-lg{grid-column:span 7}
 .c-md{grid-column:span 5}
 .c-sm{grid-column:span 4}
-@media(max-width:900px){.c-lg,.c-md,.c-sm{grid-column:span 12}}
+.c-half{grid-column:span 6}
+@media(max-width:900px){.c-lg,.c-md,.c-sm,.c-half{grid-column:span 12}}
 
 /* ---------- statement ---------- */
 .statement{background:var(--ink);color:var(--cream)}
@@ -150,8 +151,8 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
     <h1>Ideas, set in<br><em>purple &amp; gold.</em></h1>
     <p class="sub">A curated collection of presentation design for higher-education strategy, governance and AI — decks composed for senior leadership, academic boards and international keynotes. Every slide is an argument, carefully set.</p>
     <div class="meta">
-      <div><b>5</b><small>Decks</small></div>
-      <div><b>203</b><small>Slides</small></div>
+      <div><b>6</b><small>Decks</small></div>
+      <div><b>200+</b><small>Slides</small></div>
       <div><b>2026</b><small>Season</small></div>
     </div>
   </div>
@@ -173,21 +174,27 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
         <div class="tags">Executive Decision Brief · 26 slides · Aug 2026</div>
         <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#works">
+      <a class="card c-md rv" href="#works">
         <div class="frame"><img src="covers/deck-03.jpg" alt="Data-Rich, Insight Poor? — cover slide"></div>
         <div class="cap"><h3>Data-Rich, Insight Poor?</h3><span class="idx">03</span></div>
         <div class="tags">Keynote on Assessment &amp; AI · 96 slides · Jun 2026</div>
         <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#works">
+      <a class="card c-lg rv" href="#works">
+        <div class="frame"><img src="covers/deck-06.jpg" alt="Advancing AI Education 2026–2030 — cover slide"></div>
+        <div class="cap"><h3>Advancing AI Education 2026–2030</h3><span class="idx">04</span></div>
+        <div class="tags">Strategic Proposal · May 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
+      </a>
+      <a class="card c-half rv" href="#works">
         <div class="frame"><img src="covers/deck-04.jpg" alt="PhD Students Orientation and Guidelines — cover slide"></div>
-        <div class="cap"><h3>PhD Students Orientation</h3><span class="idx">04</span></div>
+        <div class="cap"><h3>PhD Students Orientation</h3><span class="idx">05</span></div>
         <div class="tags">Doctoral Handbook Deck · 27 slides · Aug 2026</div>
         <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#works">
+      <a class="card c-half rv" href="#works">
         <div class="frame"><img src="covers/deck-05.jpg" alt="A Lifetime with Algorithms — cover slide"></div>
-        <div class="cap"><h3>A Lifetime with Algorithms</h3><span class="idx">05</span></div>
+        <div class="cap"><h3>A Lifetime with Algorithms</h3><span class="idx">06</span></div>
         <div class="tags">Illustrated Dinner Talk · 16 slides · Jul 2026</div>
         <div class="act"><span class="gold">View deck</span></div>
       </a>
