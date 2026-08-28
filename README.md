@@ -1,24 +1,31 @@
-# Alison Gao · Presentation Portfolio
+# Ali's · Presentation Portfolio
 
-金黄 × 墨色调的个人简报作品集网站（静态页面，可直接托管于 GitHub Pages）。
+A presentation-design portfolio set in purple & gold — decks for higher-education strategy, governance and AI.
 
-## 目录结构
+## Contents
 
-```
-├── index.html            # 作品集主页
-├── assets/               # 艺术视觉素材（主视觉、纹理）
-└── covers/               # 各套简报封面图（deck-01 ~ deck-06）
-```
+| Path | What it is |
+|---|---|
+| `index.html` | Portfolio homepage (all English, script display type) |
+| `deck-01.html` … `deck-05.html` | Slide-by-slide viewers for the five featured decks |
+| `covers/` | Cover images used on the homepage cards |
+| `decks/<deck-name>/` | Per-slide JPG images for each deck |
+| `pdfs/` | Downloadable PDF of each deck |
+| `assets/` | Hero and section artwork |
 
-## 部署到 GitHub Pages
+## Featured decks
 
-1. 在 GitHub 新建仓库（如 `presentation-portfolio`），Public
-2. 将本文件夹全部内容上传到仓库根目录（网页端直接拖拽即可）
-3. 进入仓库 **Settings → Pages**，Source 选择 `Deploy from a branch`，Branch 选 `main` / `(root)`，保存
-4. 约 1 分钟后，网站上线于 `https://<你的用户名>.github.io/presentation-portfolio/`
+1. **Governance in the Age of AI** — conference keynote · 38 slides · Aug 2026
+2. **AI Strategic Plan 2026–2030** — executive decision brief · 26 slides · Aug 2026
+3. **Data-Rich, Insight Poor?** — keynote on assessment & AI · 96 slides · Jun 2026
+4. **PhD Students Orientation** — doctoral handbook deck · 27 slides · Aug 2026
+5. **A Lifetime with Algorithms** — illustrated dinner talk · 16 slides · Jul 2026
 
-## 替换为你的真实作品
+All decks have been anonymised: institution names, crests and brand marks are removed so the pages showcase design only.
 
-- 将每套 PPT 导出的封面图替换 `covers/deck-XX.png`（建议 1280×720）
-- 在 `index.html` 中修改各卡片的标题、页数、年份
-- 将「在线浏览」「下载 PDF」的 `href="#"` 改为实际链接（如 `decks/ai-strategy.pdf`）
+## Publish with GitHub Pages
+
+1. Create a new repository (e.g. `presentation-portfolio`).
+2. Upload everything in this folder to the repository root (keep the folder structure).
+3. In **Settings → Pages**, set **Source** to `Deploy from a branch`, choose `main` and `/ (root)`, then save.
+4. Your site will be live at `https://<username>.github.io/presentation-portfolio/` within a minute or two.

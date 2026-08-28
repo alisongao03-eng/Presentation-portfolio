@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="zh-HK">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Alison Gao · Presentation Portfolio</title>
-<meta name="description" content="高等教育 AI 策略、治理与执行简报作品集 — Alison Gao Presentation Portfolio">
+<title>Ali's · Presentation Portfolio</title>
+<meta name="description" content="Ali's presentation portfolio — decks for higher-education strategy, governance and AI, set in purple &amp; gold.">
 <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#2b153f;
@@ -21,10 +21,9 @@
   --gold-bright:#e8b84b;
   --muted:#9687a5;
   --muted-dark:#5d4a6e;
-  --font-display:'Boska','Noto Serif SC',Georgia,serif;
-  --font-body:'Satoshi','Noto Serif SC',-apple-system,sans-serif;
-  --space-1:8px; --space-2:16px; --space-3:24px; --space-4:32px;
-  --space-6:48px; --space-8:64px; --space-12:96px; --space-16:128px;
+  --font-script:'Great Vibes',cursive;
+  --font-display:'Boska',Georgia,serif;
+  --font-body:'Satoshi',-apple-system,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -33,10 +32,10 @@ body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-
 
 /* ---------- nav ---------- */
 .nav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;
-  padding:18px clamp(24px,5vw,72px);background:rgba(38,15,58,.85);backdrop-filter:blur(14px);
+  padding:14px clamp(24px,5vw,72px);background:rgba(38,15,58,.85);backdrop-filter:blur(14px);
   border-bottom:1px solid rgba(201,154,58,.25)}
 .nav .brand{display:flex;align-items:center;gap:12px;color:var(--cream);text-decoration:none}
-.nav .brand span{font-family:var(--font-display);font-size:19px;letter-spacing:.04em}
+.nav .brand span{font-family:var(--font-script);font-size:28px;color:var(--gold-bright);line-height:1}
 .nav ul{display:flex;gap:clamp(16px,3vw,40px);list-style:none}
 .nav a.lnk{color:var(--cream-dim);text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:color .25s}
 .nav a.lnk:hover{color:var(--gold-bright)}
@@ -48,10 +47,10 @@ body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-
 .hero .inner{position:relative;z-index:2;padding:0 clamp(24px,5vw,72px) clamp(48px,8vh,96px);max-width:1280px;width:100%;margin:0 auto}
 .hero .kicker{display:flex;align-items:center;gap:14px;color:var(--gold-bright);font-size:13px;letter-spacing:.28em;text-transform:uppercase;margin-bottom:22px}
 .hero .kicker::before{content:"";display:inline-block;width:14px;height:14px;background:var(--gold-bright)}
-.hero h1{font-family:var(--font-display);font-weight:500;color:var(--cream);
-  font-size:clamp(52px,9vw,124px);line-height:1.02;letter-spacing:-.01em}
-.hero h1 em{font-style:italic;color:var(--gold-bright)}
-.hero .sub{margin-top:26px;max-width:560px;color:var(--cream-dim);font-size:17px;font-weight:300;line-height:1.75}
+.hero h1{font-family:var(--font-script);font-weight:400;color:var(--cream);
+  font-size:clamp(64px,11vw,150px);line-height:1.08;letter-spacing:.01em}
+.hero h1 em{font-style:normal;color:var(--gold-bright)}
+.hero .sub{margin-top:26px;max-width:600px;color:var(--cream-dim);font-size:17px;font-weight:300;line-height:1.75}
 .hero .meta{margin-top:38px;display:flex;gap:clamp(24px,5vw,64px);flex-wrap:wrap}
 .hero .meta div{border-top:1px solid rgba(201,154,58,.45);padding-top:12px;min-width:120px}
 .hero .meta b{display:block;font-family:var(--font-display);font-size:26px;color:var(--gold-bright);font-weight:500}
@@ -62,12 +61,12 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .wrap{max-width:1280px;margin:0 auto}
 .sec-head{display:flex;align-items:baseline;gap:22px;margin-bottom:clamp(40px,6vw,72px)}
 .sec-head .num{font-family:var(--font-display);font-style:italic;color:var(--purple);font-size:20px}
-.sec-head h2{font-family:var(--font-display);font-weight:500;font-size:clamp(30px,4vw,46px);letter-spacing:-.01em}
+.sec-head h2{font-family:var(--font-script);font-weight:400;font-size:clamp(44px,6vw,72px);letter-spacing:.01em;line-height:1.1}
 .sec-head .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--purple-soft),transparent)}
 
 /* ---------- gallery ---------- */
 .works{background:var(--cream)}
-.works .sec-head h2,.approach .sec-head h2{color:var(--ink)}
+.works .sec-head h2,.approach .sec-head h2{color:var(--purple)}
 .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:clamp(20px,3vw,36px)}
 .card{position:relative;text-decoration:none;color:var(--ink);display:block}
 .card .frame{position:relative;overflow:hidden;background:var(--ink)}
@@ -75,8 +74,8 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .card:hover .frame::after{border-color:rgba(201,154,58,.75)}
 .card img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1),opacity .4s}
 .card:hover img{transform:scale(1.035)}
-.card .cap{display:flex;justify-content:space-between;align-items:baseline;padding:16px 2px 0;gap:12px}
-.card .cap h3{font-family:var(--font-display);font-weight:500;font-size:21px;line-height:1.25;color:var(--ink)}
+.card .cap{display:flex;justify-content:space-between;align-items:baseline;padding:14px 2px 0;gap:12px}
+.card .cap h3{font-family:var(--font-script);font-weight:400;font-size:clamp(26px,2.4vw,32px);line-height:1.2;color:var(--ink)}
 .card .cap .idx{font-family:var(--font-display);font-style:italic;color:var(--purple);font-size:16px;white-space:nowrap}
 .card .tags{padding:6px 2px 0;color:var(--muted-dark);font-size:13px;letter-spacing:.02em}
 .card .act{margin-top:12px;display:flex;gap:10px}
@@ -96,8 +95,8 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .statement .art{position:relative}
 .statement .art img{width:100%;display:block}
 .statement .art::after{content:"";position:absolute;top:18px;left:18px;right:-18px;bottom:-18px;border:1px solid rgba(201,154,58,.5);z-index:-0;pointer-events:none}
-.statement blockquote{font-family:var(--font-display);font-weight:400;font-size:clamp(26px,3.2vw,40px);line-height:1.35;letter-spacing:.01em}
-.statement blockquote em{font-style:italic;color:var(--gold-bright)}
+.statement blockquote{font-family:var(--font-script);font-weight:400;font-size:clamp(36px,4.4vw,56px);line-height:1.3;letter-spacing:.01em}
+.statement blockquote em{font-style:normal;color:var(--gold-bright)}
 .statement .attrib{margin-top:28px;color:var(--muted);font-size:13px;letter-spacing:.2em;text-transform:uppercase}
 .statement .body{margin-top:24px;color:var(--cream-dim);font-weight:300;font-size:16px;line-height:1.8;max-width:52ch}
 
@@ -106,14 +105,14 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 @media(max-width:900px){.approach .items{grid-template-columns:1fr}}
 .approach .item{border-top:2px solid var(--purple);padding-top:22px}
 .approach .item .box{width:12px;height:12px;background:var(--gold);margin-bottom:18px;box-shadow:18px 0 0 var(--purple-soft)}
-.approach h3{font-family:var(--font-display);font-weight:500;font-size:22px;margin-bottom:10px;color:var(--ink)}
+.approach h3{font-family:var(--font-script);font-weight:400;font-size:34px;margin-bottom:10px;color:var(--purple)}
 .approach p{color:var(--muted-dark);font-size:15px;line-height:1.75}
 
 /* ---------- footer ---------- */
 footer{background:var(--ink);color:var(--cream);padding:clamp(64px,8vw,110px) clamp(24px,5vw,72px) 40px}
 footer .wrap{display:flex;flex-direction:column;gap:48px}
-footer .cta h2{font-family:var(--font-display);font-weight:500;font-size:clamp(36px,5vw,64px);line-height:1.1}
-footer .cta h2 em{font-style:italic;color:var(--gold-bright)}
+footer .cta h2{font-family:var(--font-script);font-weight:400;font-size:clamp(52px,7vw,96px);line-height:1.15}
+footer .cta h2 em{font-style:normal;color:var(--gold-bright)}
 footer .cta a{display:inline-block;margin-top:28px;color:var(--ink);background:var(--gold-bright);text-decoration:none;
   padding:14px 34px;font-size:13px;letter-spacing:.16em;text-transform:uppercase;transition:background .25s,box-shadow .25s;box-shadow:6px 6px 0 var(--purple)}
 footer .cta a:hover{background:var(--gold);box-shadow:3px 3px 0 var(--purple)}
@@ -129,12 +128,12 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
 <body>
 
 <nav class="nav">
-  <a class="brand" href="#top" aria-label="Alison Gao Portfolio">
+  <a class="brand" href="#top" aria-label="Ali's Portfolio">
     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-label="gold box logo">
       <rect x="1" y="1" width="17" height="17" stroke="#8b54bd" stroke-width="2"/>
       <rect x="9" y="9" width="16" height="16" fill="#e8b84b"/>
     </svg>
-    <span>Alison Gao</span>
+    <span>Ali's</span>
   </a>
   <ul>
     <li><a class="lnk" href="#works">Works</a></li>
@@ -147,13 +146,13 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
   <img class="bg" src="assets/hero-purple-gold.png" alt="Golden brushstroke sweeping across deep purple ink wash">
   <div class="veil"></div>
   <div class="inner">
-    <p class="kicker">Presentation Portfolio · 简报作品集</p>
+    <p class="kicker">Ali's Presentation Portfolio</p>
     <h1>Ideas, set in<br><em>purple &amp; gold.</em></h1>
-    <p class="sub">高等教育 AI 策略、治理与执行简报作品集。每一套幻灯片，都是一次把复杂议题化为清晰叙事的练习 — 为大学高层管理、学术委员会与政策对话而作。</p>
+    <p class="sub">A curated collection of presentation design for higher-education strategy, governance and AI — decks composed for senior leadership, academic boards and international keynotes. Every slide is an argument, carefully set.</p>
     <div class="meta">
-      <div><b>12+</b><small>Decks</small></div>
-      <div><b>300+</b><small>Slides</small></div>
-      <div><b>2024–26</b><small>Period</small></div>
+      <div><b>5</b><small>Decks</small></div>
+      <div><b>203</b><small>Slides</small></div>
+      <div><b>2026</b><small>Season</small></div>
     </div>
   </div>
 </header>
@@ -162,46 +161,35 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
   <div class="wrap">
     <div class="sec-head rv"><span class="num">No.01</span><h2>Selected Works</h2><div class="rule"></div></div>
     <div class="grid">
-      <a class="card c-lg rv" href="#">
-        <div class="frame"><img src="covers/deck-01.png" alt="AI Strategy for Higher Education 封面"></div>
-        <div class="cap"><h3>AI Strategy for Higher Education</h3><span class="idx">01</span></div>
-        <div class="tags">高层管理简报 · 24 页 · 2026</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
+      <a class="card c-lg rv" href="#works">
+        <div class="frame"><img src="covers/deck-01.jpg" alt="Governance in the Age of AI — cover slide"></div>
+        <div class="cap"><h3>Governance in the Age of AI</h3><span class="idx">01</span></div>
+        <div class="tags">Conference Keynote · 38 slides · Aug 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-md rv" href="#">
-        <div class="frame"><img src="covers/deck-02.png" alt="Governance and Ethics Roadmap 封面"></div>
-        <div class="cap"><h3>Governance &amp; Ethics Roadmap</h3><span class="idx">02</span></div>
-        <div class="tags">政策专题 · 16 页 · 2026</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
+      <a class="card c-md rv" href="#works">
+        <div class="frame"><img src="covers/deck-02.jpg" alt="AI Strategic Plan 2026–2030 — cover slide"></div>
+        <div class="cap"><h3>AI Strategic Plan 2026–2030</h3><span class="idx">02</span></div>
+        <div class="tags">Executive Decision Brief · 26 slides · Aug 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#">
-        <div class="frame"><img src="covers/deck-03.png" alt="Five-Pillar Education Framework 封面"></div>
-        <div class="cap"><h3>Five-Pillar Framework</h3><span class="idx">03</span></div>
-        <div class="tags">框架发布 · 18 页 · 2025</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
+      <a class="card c-sm rv" href="#works">
+        <div class="frame"><img src="covers/deck-03.jpg" alt="Data-Rich, Insight Poor? — cover slide"></div>
+        <div class="cap"><h3>Data-Rich, Insight Poor?</h3><span class="idx">03</span></div>
+        <div class="tags">Keynote on Assessment &amp; AI · 96 slides · Jun 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#">
-        <div class="frame"><img src="covers/deck-04.png" alt="Smart Campus Transformation 封面"></div>
-        <div class="cap"><h3>Smart Campus Transformation</h3><span class="idx">04</span></div>
-        <div class="tags">策略简报 · 20 页 · 2025</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
+      <a class="card c-sm rv" href="#works">
+        <div class="frame"><img src="covers/deck-04.jpg" alt="PhD Students Orientation and Guidelines — cover slide"></div>
+        <div class="cap"><h3>PhD Students Orientation</h3><span class="idx">04</span></div>
+        <div class="tags">Doctoral Handbook Deck · 27 slides · Aug 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
       </a>
-      <a class="card c-sm rv" href="#">
-        <div class="frame"><img src="covers/deck-05.png" alt="Micro-credentials and Curriculum Futures 封面"></div>
-        <div class="cap"><h3>Micro-credentials &amp; Curriculum Futures</h3><span class="idx">05</span></div>
-        <div class="tags">学术委员会 · 22 页 · 2025</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
-      </a>
-      <a class="card c-lg rv" href="#">
-        <div class="frame"><img src="covers/deck-06.png" alt="Institutional Benchmarking Review 封面"></div>
-        <div class="cap"><h3>Institutional Benchmarking Review</h3><span class="idx">06</span></div>
-        <div class="tags">年度检讨 · 28 页 · 2024</div>
-        <div class="act"><span class="gold">在线浏览</span><span>下载 PDF</span></div>
-      </a>
-      <a class="card c-md rv" href="#" style="display:flex;flex-direction:column;justify-content:center;border:1px solid var(--purple-soft);padding:clamp(28px,4vw,48px)">
-        <p style="font-family:var(--font-display);font-style:italic;color:var(--purple);font-size:17px">More in the archive</p>
-        <h3 style="font-family:var(--font-display);font-weight:500;font-size:clamp(24px,2.6vw,32px);margin-top:10px;line-height:1.3;color:var(--ink)">查看完整作品档案 →</h3>
-        <p style="color:var(--muted-dark);font-size:14px;margin-top:14px">含全部简报的逐页预览与 PDF 原文件</p>
+      <a class="card c-sm rv" href="#works">
+        <div class="frame"><img src="covers/deck-05.jpg" alt="A Lifetime with Algorithms — cover slide"></div>
+        <div class="cap"><h3>A Lifetime with Algorithms</h3><span class="idx">05</span></div>
+        <div class="tags">Illustrated Dinner Talk · 16 slides · Jul 2026</div>
+        <div class="act"><span class="gold">View deck</span></div>
       </a>
     </div>
   </div>
@@ -209,11 +197,11 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
 
 <section class="statement" id="about">
   <div class="wrap cols">
-    <div class="art rv"><img src="assets/purple-gold-boxes.png" alt="金箔与紫色方块在米色纸面上的抽象构成"></div>
+    <div class="art rv"><img src="assets/purple-gold-boxes.png" alt="Abstract composition of gold and purple boxes on cream paper"></div>
     <div class="rv">
       <blockquote>“A slide is not a page of notes —<br>it is <em>an argument, composed.</em>”</blockquote>
-      <p class="attrib">— Design Statement · 设计自述</p>
-      <p class="body">我在香港从事高等教育策略与治理工作，日常为大学高层管理者撰写并设计简报、政策文件与演讲材料。这份作品集收录了近年来在 AI 教育策略、治理框架与制度检讨方面的代表性演示作品 — 它们的共同追求是：让每一页都值得被认真阅读。</p>
+      <p class="attrib">— Design Statement</p>
+      <p class="body">I work in higher-education strategy and governance in Hong Kong, writing and designing briefings, policy papers and keynote materials for university senior leadership. This portfolio gathers recent presentation work across AI strategy, governance frameworks and institutional review — all sharing one ambition: to make every page worth reading closely.</p>
     </div>
   </div>
 </section>
@@ -224,18 +212,18 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
     <div class="items">
       <div class="item rv">
         <div class="box"></div>
-        <h3>Narrative First · 叙事为先</h3>
-        <p>先有论证结构，再有版式。每套简报都从一条清晰的故事线开始，页面只是叙事的容器。</p>
+        <h3>Narrative first</h3>
+        <p>The argument comes before the layout. Every deck begins with a single clear storyline; the pages are simply vessels for the narrative.</p>
       </div>
       <div class="item rv">
         <div class="box"></div>
-        <h3>Evidence &amp; Rigour · 有据可依</h3>
-        <p>基准比较、政策引用与数据来源逐页可溯，让决策者在美感之外，同样信任内容本身。</p>
+        <h3>Evidence &amp; rigour</h3>
+        <p>Benchmarks, policy references and data sources are traceable on every page — so decision-makers can trust the substance as much as the styling.</p>
       </div>
       <div class="item rv">
         <div class="box"></div>
-        <h3>Crafted Restraint · 克制的工艺</h3>
-        <p>一种字体的层级、一种金色的分寸。设计的高级感来自克制，而非装饰的堆叠。</p>
+        <h3>Crafted restraint</h3>
+        <p>One typographic hierarchy, one measured shade of gold. Refinement comes from restraint, never from ornament piled on ornament.</p>
       </div>
     </div>
   </div>
@@ -248,8 +236,8 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
       <a href="mailto:alisongao@cuhk.edu.hk">Get in touch</a>
     </div>
     <div class="base">
-      <span>© 2026 Alison Gao · Presentation Portfolio</span>
-      <span>Hong Kong · 香港</span>
+      <span>© 2026 Ali's · Presentation Portfolio</span>
+      <span>Hong Kong</span>
     </div>
   </div>
 </footer>
