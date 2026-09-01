@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ali's Deckworks · Presentation Portfolio</title>
-<meta name="description" content="Ali's Deckworks — presentation design for higher-education strategy, governance and AI, set in purple &amp; gold.">
+<title>Alison Gao · Personal Profile</title>
+<meta name="description" content="Alison Gao — personal profile. Higher-education strategy, governance and presentation design, set in purple &amp; gold.">
 <link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#2b153f;
@@ -21,7 +21,7 @@
   --gold-bright:#e8b84b;
   --muted:#9687a5;
   --muted-dark:#5d4a6e;
-  --font-script:'Great Vibes',cursive;
+  --font-script:'Dancing Script',cursive;
   --font-display:'Boska',Georgia,serif;
   --font-body:'Satoshi',-apple-system,sans-serif;
 }
@@ -36,9 +36,22 @@ body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-
   border-bottom:1px solid rgba(201,154,58,.25)}
 .nav .brand{display:flex;align-items:center;gap:12px;color:var(--cream);text-decoration:none}
 .nav .brand span{font-family:var(--font-script);font-size:28px;color:var(--gold-bright);line-height:1}
-.nav ul{display:flex;gap:clamp(16px,3vw,40px);list-style:none}
-.nav a.lnk{color:var(--cream-dim);text-decoration:none;font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:color .25s}
-.nav a.lnk:hover{color:var(--gold-bright)}
+.nav ul{display:flex;gap:clamp(10px,1.6vw,18px);list-style:none}
+.nav a.lnk{display:inline-block;padding:10px 20px;border-radius:10px;
+  color:var(--cream);text-decoration:none;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;
+  background:linear-gradient(180deg,#4d2a6e 0%,#3a1e54 55%,#31184a 100%);
+  border:1px solid rgba(232,184,75,.45);border-top-color:rgba(255,255,255,.28);
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 -2px 6px rgba(0,0,0,.35) inset,
+    0 4px 10px rgba(0,0,0,.45),0 1px 2px rgba(0,0,0,.5);
+  text-shadow:0 1px 2px rgba(0,0,0,.45);
+  transition:transform .22s cubic-bezier(.16,1,.3,1),box-shadow .22s,background .22s,color .22s}
+.nav a.lnk:hover{transform:translateY(-2px);color:var(--ink);
+  background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%);
+  border-color:rgba(255,255,255,.5);text-shadow:0 1px 1px rgba(255,255,255,.35);
+  box-shadow:0 1px 0 rgba(255,255,255,.45) inset,0 -2px 6px rgba(122,84,16,.45) inset,
+    0 8px 18px rgba(0,0,0,.5),0 2px 4px rgba(0,0,0,.4)}
+.nav a.lnk:active{transform:translateY(0);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 2px 5px rgba(0,0,0,.4)}
+@media(max-width:720px){.nav a.lnk{padding:8px 12px;font-size:11px;letter-spacing:.08em}}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;background:var(--ink);overflow:hidden}
@@ -89,8 +102,23 @@ section{padding:clamp(72px,10vw,140px) clamp(24px,5vw,72px)}
 .c-half{grid-column:span 6}
 @media(max-width:900px){.c-lg,.c-md,.c-sm,.c-half{grid-column:span 12}}
 
+/* ---------- profile ---------- */
+.profile{display:flex;flex-direction:column;align-items:flex-start}
+.avatar{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--gold-bright);box-shadow:0 0 0 10px rgba(201,154,58,.14)}
+.pname{font-family:var(--font-script);font-weight:400;font-size:56px;color:var(--gold-bright);margin:24px 0 4px;line-height:1.1}
+.prole{color:var(--cream-dim);font-size:16px;line-height:1.65}
+.pfacts{list-style:none;margin-top:18px;display:flex;flex-direction:column;gap:9px;color:var(--muted);font-size:14px}
+.pfacts li::before{content:"";display:inline-block;width:8px;height:8px;background:var(--gold);margin-right:12px}
+.pbtn{display:inline-block;margin-top:24px;padding:10px 24px;border:1px solid var(--gold-bright);color:var(--gold-bright);text-decoration:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;transition:all .25s}
+.pbtn:hover{background:var(--gold-bright);color:var(--ink)}
+
+/* ---------- ai education section ---------- */
+.ai-edu{background:var(--cream-dim)}
+.ai-edu .sec-head h2{color:var(--purple)}
+.ai-edu .lede{max-width:64ch;color:var(--muted-dark);font-size:16px;line-height:1.75;margin:-28px 0 clamp(36px,5vw,56px)}
+
 /* ---------- statement ---------- */
-.statement{background:var(--ink);color:var(--cream)}
+.statement{background:var(--ink);color:var(--cream);border-top:1px solid rgba(232,184,75,.3)}
 .statement .cols{display:grid;grid-template-columns:5fr 7fr;gap:clamp(40px,6vw,88px);align-items:center}
 @media(max-width:900px){.statement .cols{grid-template-columns:1fr}}
 .statement .art{position:relative}
@@ -129,16 +157,17 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
 <body>
 
 <nav class="nav">
-  <a class="brand" href="#top" aria-label="Ali's Deckworks">
+  <a class="brand" href="#top" aria-label="Alison Gao">
     <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-label="gold box logo">
       <rect x="1" y="1" width="17" height="17" stroke="#8b54bd" stroke-width="2"/>
       <rect x="9" y="9" width="16" height="16" fill="#e8b84b"/>
     </svg>
-    <span>Ali's Deckworks</span>
+    <span>Alison Gao</span>
   </a>
   <ul>
-    <li><a class="lnk" href="#works">Works</a></li>
     <li><a class="lnk" href="#about">About</a></li>
+    <li><a class="lnk" href="#works">Deck Collection</a></li>
+    <li><a class="lnk" href="#ai-education">AI Education</a></li>
     <li><a class="lnk" href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -147,75 +176,100 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
   <img class="bg" src="assets/hero-purple-gold.png" alt="Golden brushstroke sweeping across deep purple ink wash">
   <div class="veil"></div>
   <div class="inner">
-    <p class="kicker">Ali's Deckworks · Presentation Portfolio</p>
-    <h1>Ideas, set in<br><em>purple &amp; gold.</em></h1>
-    <p class="sub">A curated collection of presentation design for higher-education strategy, governance and AI — decks composed for senior leadership, academic boards and international keynotes. Every slide is an argument, carefully set.</p>
+    <p class="kicker">Personal Profile · Higher Education &amp; AI</p>
+    <h1>Hello, I'm<br><em>Alison Gao.</em></h1>
+    <p class="sub">Executive Officer in higher-education leadership, Hong Kong — I shape education strategy, governance briefs and AI initiatives, and compose the presentations that carry them: decks for senior leadership, academic boards and international keynotes.</p>
     <div class="meta">
-      <div><b>6</b><small>Decks</small></div>
+      <div><b>7</b><small>Decks</small></div>
       <div><b>200+</b><small>Slides</small></div>
       <div><b>2026</b><small>Season</small></div>
     </div>
   </div>
 </header>
 
+<section class="statement" id="about">
+  <div class="wrap cols">
+    <div class="profile rv">
+      <img class="avatar" src="assets/profile.jpg" alt="Portrait of Alison Gao">
+      <h3 class="pname">Alison Gao</h3>
+      <p class="prole">Executive Officer, Pro-Vice-Chancellor's Office (Education)<br>The Chinese University of Hong Kong</p>
+      <ul class="pfacts">
+        <li>MA in Educational Leadership · University of Manchester</li>
+        <li>Hong Kong SAR</li>
+        <li>Keen tennis &amp; badminton player</li>
+      </ul>
+      <a class="pbtn" href="https://www.linkedin.com/in/alison-gao03" target="_blank" rel="noopener">LinkedIn Profile</a>
+    </div>
+    <div class="rv">
+      <blockquote>“A slide is not a page of notes —<br>it is <em>an argument, composed.</em>”</blockquote>
+      <p class="attrib">— Design Statement</p>
+      <p class="body">I am an intelligent executive assistant to the Pro-Vice-Chancellor / Vice-President (Education) of CUHK, supporting education strategy, policy coordination and governance. My work spans AI education frameworks, institutional review and executive communications — and this portfolio gathers the decks where those arguments took shape, each one composed to make every page worth reading closely.</p>
+    </div>
+  </div>
+</section>
+
 <section class="works" id="works">
   <div class="wrap">
-    <div class="sec-head rv"><span class="num">No.01</span><h2>Selected Works</h2><div class="rule"></div></div>
+    <div class="sec-head rv"><span class="num">No.01</span><h2>Deck Collection</h2><div class="rule"></div></div>
     <div class="grid">
       <a class="card c-lg rv" href="#works">
         <div class="frame"><img src="covers/deck-01.jpg" alt="Governance in the Age of AI — cover slide"></div>
         <div class="cap"><h3>Governance in the Age of AI</h3><span class="idx">01</span></div>
         <div class="tags">Conference Keynote · 38 slides · Aug 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
-      </a>
-      <a class="card c-md rv" href="#works">
-        <div class="frame"><img src="covers/deck-02.jpg" alt="AI Strategic Plan 2026–2030 — cover slide"></div>
-        <div class="cap"><h3>AI Strategic Plan 2026–2030</h3><span class="idx">02</span></div>
-        <div class="tags">Executive Decision Brief · 26 slides · Aug 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
+        <div class="act"><span class="gold">Details to be released</span></div>
       </a>
       <a class="card c-md rv" href="#works">
         <div class="frame"><img src="covers/deck-03.jpg" alt="Data-Rich, Insight Poor? — cover slide"></div>
-        <div class="cap"><h3>Data-Rich, Insight Poor?</h3><span class="idx">03</span></div>
+        <div class="cap"><h3>Data-Rich, Insight Poor?</h3><span class="idx">02</span></div>
         <div class="tags">Keynote on Assessment &amp; AI · 96 slides · Jun 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
-      </a>
-      <a class="card c-lg rv" href="#works">
-        <div class="frame"><img src="covers/deck-06.jpg" alt="Advancing AI Education 2026–2030 — cover slide"></div>
-        <div class="cap"><h3>Advancing AI Education 2026–2030</h3><span class="idx">04</span></div>
-        <div class="tags">Strategic Proposal · May 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
+        <div class="act"><span class="gold">Details to be released</span></div>
       </a>
       <a class="card c-half rv" href="#works">
         <div class="frame"><img src="covers/deck-04.jpg" alt="PhD Students Orientation and Guidelines — cover slide"></div>
-        <div class="cap"><h3>PhD Students Orientation</h3><span class="idx">05</span></div>
+        <div class="cap"><h3>PhD Students Orientation</h3><span class="idx">03</span></div>
         <div class="tags">Doctoral Handbook Deck · 27 slides · Aug 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
+        <div class="act"><span class="gold">Details to be released</span></div>
       </a>
       <a class="card c-half rv" href="#works">
         <div class="frame"><img src="covers/deck-05.jpg" alt="A Lifetime with Algorithms — cover slide"></div>
-        <div class="cap"><h3>A Lifetime with Algorithms</h3><span class="idx">06</span></div>
+        <div class="cap"><h3>A Lifetime with Algorithms</h3><span class="idx">04</span></div>
         <div class="tags">Illustrated Dinner Talk · 16 slides · Jul 2026</div>
-        <div class="act"><span class="gold">View deck</span></div>
+        <div class="act"><span class="gold">Details to be released</span></div>
       </a>
     </div>
   </div>
 </section>
 
-<section class="statement" id="about">
-  <div class="wrap cols">
-    <div class="art rv"><img src="assets/purple-gold-boxes.png" alt="Abstract composition of gold and purple boxes on cream paper"></div>
-    <div class="rv">
-      <blockquote>“A slide is not a page of notes —<br>it is <em>an argument, composed.</em>”</blockquote>
-      <p class="attrib">— Design Statement</p>
-      <p class="body">I work in higher-education strategy and governance in Hong Kong, writing and designing briefings, policy papers and keynote materials for university senior leadership. This portfolio gathers recent presentation work across AI strategy, governance frameworks and institutional review — all sharing one ambition: to make every page worth reading closely.</p>
+<section class="ai-edu" id="ai-education">
+  <div class="wrap">
+    <div class="sec-head rv"><span class="num">No.02</span><h2>AI Education @ CUHK</h2><div class="rule"></div></div>
+    <p class="lede rv">A flagship project stream at The Chinese University of Hong Kong — shaping the university-wide AI education strategy, from benchmarking and governance frameworks to an executive decision brief for senior leadership.</p>
+    <div class="grid">
+      <a class="card c-lg rv" href="aideck.html">
+        <div class="frame"><img src="aideck/page-1.jpg" alt="The Education Promise — deck first page"></div>
+        <div class="cap"><h3>The Education Promise</h3><span class="idx">01</span></div>
+        <div class="tags">Strategy Excerpt · 5 pages · Aug 2026 · Online viewing</div>
+        <div class="act"><span class="gold">Open viewer</span></div>
+      </a>
+      <a class="card c-md rv" href="#ai-education">
+        <div class="frame"><img src="covers/deck-06.jpg" alt="Advancing AI Education 2026–2030 — cover slide"></div>
+        <div class="cap"><h3>Advancing AI Education 2026–2030</h3><span class="idx">02</span></div>
+        <div class="tags">Strategic Proposal · May 2026</div>
+        <div class="act"><span class="gold">Details to be released</span></div>
+      </a>
+      <a class="card c-half rv" href="#ai-education">
+        <div class="frame"><img src="covers/deck-02.jpg" alt="AI Strategic Plan 2026–2030 — cover slide"></div>
+        <div class="cap"><h3>AI Strategic Plan 2026–2030</h3><span class="idx">03</span></div>
+        <div class="tags">Executive Decision Brief · 26 slides · Aug 2026</div>
+        <div class="act"><span class="gold">Details to be released</span></div>
+      </a>
     </div>
   </div>
 </section>
 
 <section class="approach">
   <div class="wrap">
-    <div class="sec-head rv"><span class="num">No.02</span><h2>Approach</h2><div class="rule"></div></div>
+    <div class="sec-head rv"><span class="num">No.03</span><h2>Approach</h2><div class="rule"></div></div>
     <div class="items">
       <div class="item rv">
         <div class="box"></div>
@@ -243,7 +297,7 @@ footer .base{display:flex;justify-content:space-between;align-items:center;gap:1
       <a href="mailto:181051790@qq.com">Get in touch</a>
     </div>
     <div class="base">
-      <span>© 2026 Ali's Deckworks</span>
+      <span>© 2026 Alison Gao · Ink &amp; Gold</span>
       <span>Hong Kong</span>
     </div>
   </div>

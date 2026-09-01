@@ -1,4 +1,4 @@
-# Ali's Deckworks · Presentation Portfolio
+# Alison Gao · Personal Profile
 
 A presentation-design portfolio set in purple & gold — decks for higher-education strategy, governance and AI.
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Education Promise · AI Education — Alison Gao</title>
+<meta name="robots" content="noindex">
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --ink:#2b153f; --purple:#660099; --cream:#f7f2e6;
+  --gold:#c99a3a; --gold-bright:#e8b84b; --muted:#9687a5;
+  --font-script:'Dancing Script',cursive;
+}
+html{scroll-behavior:smooth}
+body{background:#221230;font-family:'Satoshi',sans-serif;color:var(--cream)}
+.top{position:fixed;top:0;left:0;right:0;z-index:10;display:flex;align-items:center;justify-content:space-between;
+  padding:14px clamp(20px,4vw,48px);background:rgba(34,18,48,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(232,184,75,.25)}
+.top .brand{font-family:var(--font-script);font-weight:600;font-size:26px;color:var(--gold-bright);text-decoration:none}
+.top .title{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center}
+.top .back{font-size:13px;letter-spacing:.1em;color:var(--cream);text-decoration:none;border:1px solid rgba(232,184,75,.5);padding:8px 18px;transition:all .25s}
+.top .back:hover{background:var(--gold-bright);color:var(--ink);border-color:var(--gold-bright)}
+.head{max-width:1080px;margin:110px auto 8px;padding:0 20px}
+.head h1{font-family:var(--font-script);font-weight:600;font-size:clamp(40px,5.5vw,64px);color:var(--gold-bright);line-height:1.15}
+.head p{margin-top:8px;color:var(--muted);font-size:14px;letter-spacing:.06em}
+.pages{max-width:1080px;margin:34px auto 40px;padding:0 20px;display:flex;flex-direction:column;gap:30px}
+.pg{position:relative}
+.pg .n{font-size:12px;letter-spacing:.16em;color:var(--muted);margin-bottom:8px;text-transform:uppercase}
+.pg img{width:100%;display:block;box-shadow:0 18px 50px rgba(0,0,0,.5);user-select:none;-webkit-user-drag:none;pointer-events:none}
+.note{max-width:1080px;margin:0 auto 70px;padding:0 20px;color:var(--muted);font-size:12.5px;letter-spacing:.08em}
+@media(max-width:720px){.top .title{display:none}}
+</style>
+</head>
+<body oncontextmenu="return false">
+
+<nav class="top">
+  <a class="brand" href="index.html">Alison Gao</a>
+  <span class="title">AI Education · Deck Viewer</span>
+  <a class="back" href="index.html#ai-education">&#8592; Back</a>
+</nav>
+
+<header class="head">
+  <h1>The Education Promise</h1>
+  <p>AI EDUCATION · STRATEGY EXCERPT · 5 PAGES · AUG 2026 · VIEW ONLY</p>
+</header>
+
+<main class="pages">
+  <div class="pg"><div class="n">Page 1 / 5</div><img src="aideck/page-1.jpg" alt="Deck page 1"></div>
+  <div class="pg"><div class="n">Page 2 / 5</div><img src="aideck/page-2.jpg" alt="Deck page 2" loading="lazy"></div>
+  <div class="pg"><div class="n">Page 3 / 5</div><img src="aideck/page-3.jpg" alt="Deck page 3" loading="lazy"></div>
+  <div class="pg"><div class="n">Page 4 / 5</div><img src="aideck/page-4.jpg" alt="Deck page 4" loading="lazy"></div>
+  <div class="pg"><div class="n">Page 5 / 5</div><img src="aideck/page-5.jpg" alt="Deck page 5" loading="lazy"></div>
+</main>
+
+<p class="note">Online viewing only — this deck is not available for download. &copy; 2026 Alison Gao · Hong Kong</p>
+
+</body>
+</html>
