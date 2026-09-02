@@ -53,7 +53,13 @@ body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-
 .nav a.lnk:active{transform:translateY(0);box-shadow:0 1px 0 rgba(255,255,255,.2) inset,0 2px 5px rgba(0,0,0,.4)}
 .nav a.lang{background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%);color:var(--ink);text-shadow:0 1px 1px rgba(255,255,255,.35);border-color:rgba(255,255,255,.5)}
 .nav a.lang:hover{background:linear-gradient(180deg,#fff0c0 0%,#f3cd6f 50%,var(--gold-bright) 100%);color:var(--ink)}
-@media(max-width:720px){.nav a.lnk{padding:8px 12px;font-size:11px;letter-spacing:.08em}}
+@media(max-width:720px){
+  .nav{flex-wrap:wrap;justify-content:center;gap:10px;padding:12px 14px}
+  .nav .brand span{font-size:24px}
+  .nav ul{flex-wrap:wrap;justify-content:center;gap:6px;padding:0}
+  .nav a.lnk{padding:7px 11px;font-size:10.5px;letter-spacing:.06em;border-radius:8px;white-space:nowrap}
+}
+html,body{overflow-x:hidden}
 
 /* ---------- hero ---------- */
 .hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;background:var(--ink);overflow:hidden}
