@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Speaking Topics · Alison Gao</title>
+<meta name="description" content="Keynote and invited talks — abstracts and details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b153f;--purple:#660099;--purple-soft:#8b54bd;--cream:#f7f2e6;--cream-dim:#e9ddf0;--gold:#c99a3a;--gold-bright:#e8b84b;
+--font-script:'Dancing Script',cursive;--font-display:'Boska',Georgia,serif;--font-body:'Satoshi',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.7;font-size:16px}
+::selection{background:var(--purple);color:var(--cream)}
+.nav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:14px clamp(24px,5vw,72px);background:rgba(38,15,58,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,154,58,.25)}
+.nav .brand{display:flex;align-items:center;gap:12px;color:var(--gold-bright);text-decoration:none;font-family:var(--font-script);font-size:26px;line-height:1}
+.nav ul{display:flex;gap:8px;list-style:none;flex-wrap:wrap;justify-content:flex-end}
+.nav a.lnk{display:inline-block;padding:8px 14px;border-radius:10px;color:var(--cream);text-decoration:none;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  background:linear-gradient(180deg,#4d2a6e 0%,#3a1e54 55%,#31184a 100%);border:1px solid rgba(232,184,75,.45);border-top-color:rgba(255,255,255,.28);
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 -2px 6px rgba(0,0,0,.35) inset,0 4px 10px rgba(0,0,0,.45);white-space:nowrap;
+  transition:transform .22s,background .22s,color .22s}
+.nav a.lnk:hover{transform:translateY(-2px);color:var(--ink);background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%)}
+.nav a.lang{background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%);color:var(--ink)}
+.hero{background:var(--ink);color:var(--cream);padding:clamp(60px,9vw,110px) clamp(24px,6vw,80px) clamp(48px,7vw,80px);position:relative;overflow:hidden}
+.hero .kicker{color:var(--gold-bright);font-size:12px;letter-spacing:.32em;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-family:var(--font-script);font-weight:400;font-size:clamp(46px,7vw,84px);line-height:1.12;color:var(--cream)}
+.hero h1 em{font-style:normal;color:var(--gold-bright)}
+.hero .note{margin-top:22px;max-width:640px;color:var(--cream-dim);font-size:15.5px;font-weight:300}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.talk{padding:clamp(56px,7vw,96px) 0;border-bottom:1px solid rgba(102,0,153,.14)}
+.talk:nth-child(odd of .talk){background:#fdfaf2}
+.talk .cat{color:var(--purple);font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:10px}
+.talk h2{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.2}
+.talk .tsub{font-family:var(--font-display);font-style:italic;color:var(--purple-soft);font-size:clamp(16px,1.6vw,19px);margin:8px 0 30px}
+.cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.frame{border:1px solid rgba(102,0,153,.18);box-shadow:0 18px 44px rgba(43,21,63,.16);border-radius:6px;overflow:hidden}
+.frame img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.chips{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
+.chip{background:#fff;border:1px solid rgba(102,0,153,.14);border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px}
+.chip small{display:block;color:var(--purple);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:3px}
+.chip p{font-size:14px;line-height:1.55}
+.right h3{font-family:var(--font-script);font-weight:400;font-size:clamp(26px,2.6vw,34px);color:var(--purple);margin:26px 0 12px}
+.right h3:first-child{margin-top:0}
+.right p{margin-bottom:14px;font-weight:300;font-size:15.5px}
+.themes{list-style:none}
+.themes li{padding:9px 0 9px 26px;position:relative;border-bottom:1px dashed rgba(102,0,153,.16);font-size:15px}
+.themes li::before{content:"";position:absolute;left:2px;top:16px;width:10px;height:10px;background:var(--gold-bright);border:1px solid var(--gold)}
+footer{background:var(--ink);color:var(--cream-dim);padding:36px clamp(24px,6vw,80px);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px}
+footer a{color:var(--gold-bright);text-decoration:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+@media(max-width:880px){.cols{grid-template-columns:1fr}}
+@media(max-width:720px){.nav{flex-wrap:wrap;justify-content:center}.nav ul{justify-content:center}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="index.html">Alison Gao</a>
+  <ul>
+    <li><a class="lnk" href="index.html">Home</a></li>
+    <li><a class="lnk" href="#science">Science</a></li>
+    <li><a class="lnk" href="#governance">Governance</a></li>
+    <li><a class="lnk" href="#students">Students</a></li>
+    <li><a class="lnk" href="#assessment">Assessment</a></li>
+    <li><a class="lnk lang" href="talks-zh.html">中文</a></li>
+  </ul>
+</nav>
+<header class="hero">
+  <p class="kicker">Keynote & Invited Talks · 2026–27</p>
+  <h1>Speaking <em>Topics.</em></h1>
+  <p class="note">Four keynotes currently available for conference invitations — each page gives the abstract, the anonymised title slide and key details. Talks can be adapted in length and emphasis to suit the event.</p>
+</header>
+
+<section class="talk" id="science">
+  <div class="wrap">
+    <p class="cat rv">TALK 01 · SCIENCE · RESEARCH · AI AND DISCOVERY</p>
+    <h2 class="rv">The New Scientific Revolution</h2>
+    <p class="tsub rv">Reimagining Human Creativity and Discovery in the Age of Artificial Intelligence</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-07.jpg" alt="The New Scientific Revolution — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>Duration</small><p>40–45 minutes; Lite and Talk editions available</p></div><div class="chip"><small>Audience</small><p>Scientists, research leaders, postgraduate and undergraduate students, science-literate general audiences</p></div><div class="chip"><small>Previously delivered</small><p>International science forum · Hong Kong · September 2026</p></div><div class="chip"><small>Deck</small><p>39 slides · 16:9 · English · Renaissance illuminated-manuscript visual style</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>Abstract</h3>
+        <p>Twenty years ago, few would have believed that a machine could predict the structures of 200 million proteins, solve Olympiad mathematics problems and generate new scientific hypotheses. Today it has — and the Nobel Prizes have already spoken.</p><p>This keynote argues that AI is the newest instrument of discovery in a lineage that runs from the telescope and the microscope to the computer. In seven acts it examines the evidence — AlphaFold and the transformation of biology, materials designed rather than searched for, the emerging AI co-scientist, AlphaProof and AlphaGeometry at the International Mathematical Olympiad, and FunSearch's constructions that no human had found.</p><p>Running through the evidence is a central paradox — we can now verify results that we do not yet understand. The talk then turns to the human response: open science as the engine of discovery, four human superpowers — curiosity, imagination, judgment and wisdom — and the TRUST framework for AI-assisted science. It ends with a New Scientific Compact and a message to young scientists: the breakthroughs of this century will come from trusted partnerships between human curiosity and machine capability.</p>
+        <h3>Key themes</h3>
+        <ul class="themes"><li>Science 1.0 to 4.0 — four ages of discovery</li><li>AlphaFold, AlphaProof, FunSearch and the AI co-scientist</li><li>Verification vs understanding</li><li>Open science in the age of AI</li><li>Four human superpowers and the TRUST framework</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="governance">
+  <div class="wrap">
+    <p class="cat rv">TALK 02 · GOVERNANCE · POLICY · PUBLIC ADMINISTRATION</p>
+    <h2 class="rv">Governance in the Age of AI</h2>
+    <p class="tsub rv">Transformation for Human & Global Impact</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-01.jpg" alt="Governance in the Age of AI — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>Duration</small><p>45 minutes (adaptable to 30–60)</p></div><div class="chip"><small>Audience</small><p>Policy makers, public administrators, regulators, university and civic leaders</p></div><div class="chip"><small>Previously delivered</small><p>International governance conference · Bangkok · August 2026</p></div><div class="chip"><small>Deck</small><p>38 slides · 16:9 · English</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>Abstract</h3>
+        <p>Intelligence is becoming abundant. Like electricity a century ago, AI is turning into ambient infrastructure embedded in every sector of society — and the challenge is no longer whether AI will become intelligent, but whether our institutions will become wise.</p><p>This keynote tells a story in three acts: why this moment matters, what the evidence says, and how institutions should respond. It introduces the Triple Governance Challenge — governing AI, governing with AI, and governing AI-enabled societies — and the distinction between smart government (doing things better) and wise governance (doing the right things), with trust as the new infrastructure every AI system must cross.</p><p>It then maps the global landscape in three waves — the EU's regulatory model, the US/OECD risk-and-standards approach and Singapore's practical assurance — and shows how readiness can be measured from city to sector, drawing on UNESCO's Readiness Assessment Methodology and international maturity indices. A university is presented as a living laboratory for AI governance: AI literacy for all, metric-aligned KPIs and the Triangle of Success of knowledge, skills and attitude.</p><p>The talk closes with four human questions for global digital cooperation — agency, trust, inclusive prosperity and social cohesion — and a simple conviction: algorithms will not write our future; we will.</p>
+        <h3>Key themes</h3>
+        <ul class="themes"><li>Smart government vs wise governance</li><li>Three waves of global AI governance</li><li>Trust as infrastructure: transparency, accountability, inclusion, ethics</li><li>Measuring AI readiness with international indices</li><li>A university as a governance laboratory</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="students">
+  <div class="wrap">
+    <p class="cat rv">TALK 03 · STUDENTS · INSPIRATION · CHARACTER AND SUCCESS</p>
+    <h2 class="rv">Dare to Fail, Dare to Dream</h2>
+    <p class="tsub rv">Finding Your Own Path — success is what people see; failure is what built it</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-08.jpg" alt="Dare to Fail, Dare to Dream — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>Duration</small><p>45 minutes, with live audience interaction</p></div><div class="chip"><small>Audience</small><p>Undergraduate and secondary students, orientation and inauguration assemblies, commencement, youth and alumni events</p></div><div class="chip"><small>Previously delivered</small><p>College inauguration assembly · Hong Kong · September 2026</p></div><div class="chip"><small>Deck</small><p>30 slides · 16:9 · English · hand-painted watercolour illustrations, step animations</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>Abstract</h3>
+        <p>What if everything you have been told about success is wrong? In this candid, personal talk, the speaker rethinks the word everyone chases — moving from the world's scoreboard of GPA, salary, title and status to a better definition: becoming the best version of yourself and, together, making the world better than you found it.</p><p>Then comes something rare on a stage: the speaker tells the story of his own failures honestly. The paper rejected many times before winning Best Paper. Seventeen years to professor. Personal mistakes, missed opportunities and initiatives that did not work. Below the waterline of every visible success sits an invisible mass of rejections, setbacks and doubt — and the conclusion is simple: the most successful people are not those who failed the least, but those who learned the most from their failures.</p><p>From those stories come five lessons that success could never have taught — resilience, humility, empathy, lifelong learning and self-discovery — and five practical messages for students: don't chase grades alone, explore beyond your major, fail early and often, build relationships, and use your gifts to make a difference. The talk opens with a live word-cloud poll and closes with three quiet promises: dare to dream, dare to fail, dare to make a difference.</p>
+        <h3>Key themes</h3>
+        <ul class="themes"><li>Two definitions of success</li><li>Famous failures — and the speaker's own</li><li>The iceberg: what people see and what built it</li><li>Five lessons from failure</li><li>Knowledge, skills and attitude — the successful learner</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="assessment">
+  <div class="wrap">
+    <p class="cat rv">TALK 04 · EDUCATION · ASSESSMENT · LEARNING ANALYTICS</p>
+    <h2 class="rv">Data-Rich, Insight Poor?</h2>
+    <p class="tsub rv">Reimagining Assessment in the Age of AI</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-03.jpg" alt="Data-Rich, Insight Poor? — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>Duration</small><p>45–60 minutes; modular sections for shorter slots</p></div><div class="chip"><small>Audience</small><p>Educators, teaching-and-learning and assessment leaders, quality-assurance and accreditation bodies, EdTech community</p></div><div class="chip"><small>Previously delivered</small><p>Education keynote series 2026 (current deck)</p></div><div class="chip"><small>Deck</small><p>63 slides · 16:9 · English · interactive ice-breaker poll</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>Abstract</h3>
+        <p>Universities have never held more data about their learners — yet the transcript still tries to summarise years of human learning in a single document, and most assessment captures only a snapshot of what a student can do at one moment in time. This keynote asks how AI and learning analytics can turn abundant data into genuine insight about learning.</p><p>It begins with how we got here: a brief history of assessment from oral disputations to standardised accountability, the structural weaknesses of the standard paradigm, and eight dimensions of learning — from critical thinking to collaboration and personal growth — that no transcript records. Mapping AI onto Bloom's six levels shows where models excel and where human judgment still matters most.</p><p>The second part shows how AI and learning analytics meet these challenges — reducing time and effort, personalising support and early intervention, scaling what one teacher can see, and improving fairness and objectivity — organised by a four-question analytics framework and a five-level maturity model. Drawing on a suite of university-built platforms for integrity, learning and assessment, it sets out four practical approaches for institutions. The vision: assessment that is continuous, timely, personalised, adaptive, scalable, fair and cost-effective.</p>
+        <h3>Key themes</h3>
+        <ul class="themes"><li>Weaknesses of the standard assessment paradigm</li><li>AI across Bloom's taxonomy</li><li>Learning analytics framework and maturity model</li><li>Academic integrity — student, teacher and institutional views</li><li>University-built platforms for integrity, learning and assessment</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <span>© 2026 Alison Gao · Ink &amp; Gold</span>
+  <span><a href="index.html">Back to profile</a></span>
+</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

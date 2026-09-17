@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>演讲主题 · Alison Gao</title>
+<meta name="description" content="主题演讲与受邀演讲——摘要与详情。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://api.fontshare.com/v2/css?f[]=boska@400,500,700&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2b153f;--purple:#660099;--purple-soft:#8b54bd;--cream:#f7f2e6;--cream-dim:#e9ddf0;--gold:#c99a3a;--gold-bright:#e8b84b;
+--font-script:'Ma Shan Zheng','Dancing Script',cursive;--font-display:'Noto Serif SC','Boska',Georgia,serif;--font-body:'Noto Sans SC','Satoshi',-apple-system,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+html,body{overflow-x:hidden}
+body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.7;font-size:16px}
+::selection{background:var(--purple);color:var(--cream)}
+.nav{position:sticky;top:0;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:14px clamp(24px,5vw,72px);background:rgba(38,15,58,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,154,58,.25)}
+.nav .brand{display:flex;align-items:center;gap:12px;color:var(--gold-bright);text-decoration:none;font-family:var(--font-script);font-size:26px;line-height:1}
+.nav ul{display:flex;gap:8px;list-style:none;flex-wrap:wrap;justify-content:flex-end}
+.nav a.lnk{display:inline-block;padding:8px 14px;border-radius:10px;color:var(--cream);text-decoration:none;font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  background:linear-gradient(180deg,#4d2a6e 0%,#3a1e54 55%,#31184a 100%);border:1px solid rgba(232,184,75,.45);border-top-color:rgba(255,255,255,.28);
+  box-shadow:0 1px 0 rgba(255,255,255,.18) inset,0 -2px 6px rgba(0,0,0,.35) inset,0 4px 10px rgba(0,0,0,.45);white-space:nowrap;
+  transition:transform .22s,background .22s,color .22s}
+.nav a.lnk:hover{transform:translateY(-2px);color:var(--ink);background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%)}
+.nav a.lang{background:linear-gradient(180deg,#f3cd6f 0%,var(--gold-bright) 45%,var(--gold) 100%);color:var(--ink)}
+.hero{background:var(--ink);color:var(--cream);padding:clamp(60px,9vw,110px) clamp(24px,6vw,80px) clamp(48px,7vw,80px);position:relative;overflow:hidden}
+.hero .kicker{color:var(--gold-bright);font-size:12px;letter-spacing:.32em;text-transform:uppercase;margin-bottom:18px}
+.hero h1{font-family:var(--font-script);font-weight:400;font-size:clamp(46px,7vw,84px);line-height:1.12;color:var(--cream)}
+.hero h1 em{font-style:normal;color:var(--gold-bright)}
+.hero .note{margin-top:22px;max-width:640px;color:var(--cream-dim);font-size:15.5px;font-weight:300}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+.talk{padding:clamp(56px,7vw,96px) 0;border-bottom:1px solid rgba(102,0,153,.14)}
+.talk:nth-child(odd of .talk){background:#fdfaf2}
+.talk .cat{color:var(--purple);font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;margin-bottom:10px}
+.talk h2{font-family:var(--font-display);font-weight:600;font-size:clamp(30px,3.6vw,44px);line-height:1.2}
+.talk .tsub{font-family:var(--font-display);font-style:italic;color:var(--purple-soft);font-size:clamp(16px,1.6vw,19px);margin:8px 0 30px}
+.cols{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,56px);align-items:start}
+.frame{border:1px solid rgba(102,0,153,.18);box-shadow:0 18px 44px rgba(43,21,63,.16);border-radius:6px;overflow:hidden}
+.frame img{display:block;width:100%;height:auto;user-select:none;-webkit-user-drag:none;pointer-events:none}
+.chips{display:grid;grid-template-columns:1fr;gap:12px;margin-top:20px}
+.chip{background:#fff;border:1px solid rgba(102,0,153,.14);border-left:3px solid var(--gold);border-radius:8px;padding:12px 16px}
+.chip small{display:block;color:var(--purple);font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:3px}
+.chip p{font-size:14px;line-height:1.55}
+.right h3{font-family:var(--font-script);font-weight:400;font-size:clamp(26px,2.6vw,34px);color:var(--purple);margin:26px 0 12px}
+.right h3:first-child{margin-top:0}
+.right p{margin-bottom:14px;font-weight:300;font-size:15.5px}
+.themes{list-style:none}
+.themes li{padding:9px 0 9px 26px;position:relative;border-bottom:1px dashed rgba(102,0,153,.16);font-size:15px}
+.themes li::before{content:"";position:absolute;left:2px;top:16px;width:10px;height:10px;background:var(--gold-bright);border:1px solid var(--gold)}
+footer{background:var(--ink);color:var(--cream-dim);padding:36px clamp(24px,6vw,80px);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px}
+footer a{color:var(--gold-bright);text-decoration:none}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+@media(max-width:880px){.cols{grid-template-columns:1fr}}
+@media(max-width:720px){.nav{flex-wrap:wrap;justify-content:center}.nav ul{justify-content:center}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="index-zh.html">Alison Gao</a>
+  <ul>
+    <li><a class="lnk" href="index-zh.html">主页</a></li>
+    <li><a class="lnk" href="#science">科学</a></li>
+    <li><a class="lnk" href="#governance">治理</a></li>
+    <li><a class="lnk" href="#students">学生</a></li>
+    <li><a class="lnk" href="#assessment">评估</a></li>
+    <li><a class="lnk lang" href="talks.html">EN</a></li>
+  </ul>
+</nav>
+<header class="hero">
+  <p class="kicker">主题演讲与受邀演讲 · 2026–27</p>
+  <h1>演讲<em>主题</em></h1>
+  <p class="note">目前可供会议邀约的四场主题演讲——以下为每场的内容简介、脱敏后的标题页与关键信息。演讲时长与侧重点均可按活动需求调整。</p>
+</header>
+
+<section class="talk" id="science">
+  <div class="wrap">
+    <p class="cat rv">演讲 01 · 科学 · 研究 · AI 与发现</p>
+    <h2 class="rv">The New Scientific Revolution</h2>
+    <p class="tsub rv">在人工智能时代重新想象人类的创造力与发现</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-07.jpg" alt="The New Scientific Revolution — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>时长</small><p>40–45 分钟；另有精简版与短讲版</p></div><div class="chip"><small>听众</small><p>科学家、科研负责人、研究生与本科生、具科学素养的公众</p></div><div class="chip"><small>曾发表于</small><p>国际科学论坛 · 香港 · 2026年9月</p></div><div class="chip"><small>规格</small><p>39 页 · 16:9 · 英文 · 文艺复兴泥金手稿视觉风格</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>内容简介</h3>
+        <p>二十年前，很少有人相信机器能预测两亿个蛋白质的结构、解出奥数题、提出新的科学假设。今天它做到了——诺贝尔奖已经给出了回答。</p><p>这场主题演讲提出：AI 是从望远镜、显微镜到计算机这一「发现工具」谱系中最新的一员。演讲以七幕展开证据——AlphaFold 与生物学的变革、从「搜寻材料」到「设计材料」、正在出现的 AI 联合科学家、AlphaProof 与 AlphaGeometry 在国际数学奥赛的表现，以及 FunSearch 找到的人类从未发现的构造。</p><p>贯穿始终的是一个核心悖论——我们已能验证自己尚未理解的结果。演讲随后转向人的回应：作为发现引擎的开放科学；四种人类「超能力」——好奇、想象、判断与智慧；以及 AI 辅助科学的 TRUST 框架。结尾提出「新科学公约」，并寄语年轻科学家：本世纪的突破，将来自人类好奇心与机器能力之间可信赖的伙伴关系。</p>
+        <h3>核心主题</h3>
+        <ul class="themes"><li>科学 1.0 到 4.0——发现的四个时代</li><li>AlphaFold、AlphaProof、FunSearch 与 AI 联合科学家</li><li>「可验证」与「可理解」之辩</li><li>AI 时代的开放科学</li><li>四种人类超能力与 TRUST 框架</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="governance">
+  <div class="wrap">
+    <p class="cat rv">演讲 02 · 治理 · 政策 · 公共管理</p>
+    <h2 class="rv">Governance in the Age of AI</h2>
+    <p class="tsub rv">面向人类福祉与全球影响的转型</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-01.jpg" alt="Governance in the Age of AI — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>时长</small><p>45 分钟（可调整为 30–60 分钟）</p></div><div class="chip"><small>听众</small><p>政策制定者、公共管理者、监管机构、大学与公共领域领导者</p></div><div class="chip"><small>曾发表于</small><p>国际治理会议 · 曼谷 · 2026年8月</p></div><div class="chip"><small>规格</small><p>38 页 · 16:9 · 英文</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>内容简介</h3>
+        <p>智能正变得触手可及。就像一个世纪前的电力，AI 正在成为嵌入社会各领域的「环境基础设施」——挑战已不再是 AI 会不会变得智能，而是我们的制度能否变得智慧。</p><p>这场主题演讲分三幕展开：为什么此刻至关重要、证据说明了什么、制度应如何回应。它提出「三重治理挑战」——治理 AI、以 AI 治理、治理被 AI 赋能的社会——并区分「聪明的政府」（把事做得更好）与「智慧的治理」（做对的事），信任则是每个 AI 系统都必须跨越的新基础设施。</p><p>演讲随后以三波浪潮描绘全球图景——欧盟的监管模式、美国/OECD 的风险与标准路径、新加坡的务实保障——并借助 UNESCO 就绪评估方法与国际成熟度指数，展示如何从城市到行业衡量 AI 就绪度。大学被呈现为 AI 治理的「活实验室」：全员 AI 素养、与指标对齐的 KPI，以及知识、技能与态度的「成功三角」。</p><p>结尾提出全球数字合作的四个人本问题——能动性、信任、包容性繁荣与社会凝聚——以及一个朴素的信念：书写未来的不会是算法，而是我们。</p>
+        <h3>核心主题</h3>
+        <ul class="themes"><li>聪明的政府 vs 智慧的治理</li><li>全球 AI 治理的三波浪潮</li><li>作为基础设施的信任：透明、问责、包容、伦理</li><li>以国际指数衡量 AI 就绪度</li><li>大学作为治理实验室</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="students">
+  <div class="wrap">
+    <p class="cat rv">演讲 03 · 学生 · 启迪 · 品格与成功</p>
+    <h2 class="rv">Dare to Fail, Dare to Dream</h2>
+    <p class="tsub rv">找到属于你的路——成功是人们看到的，失败才是成就它的</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-08.jpg" alt="Dare to Fail, Dare to Dream — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>时长</small><p>45 分钟，含现场互动</p></div><div class="chip"><small>听众</small><p>本科生与中学生、迎新与开学典礼、毕业典礼、青年与校友活动</p></div><div class="chip"><small>曾发表于</small><p>书院开学典礼 · 香港 · 2026年9月</p></div><div class="chip"><small>规格</small><p>30 页 · 16:9 · 英文 · 手绘水彩插画与分步动画</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>内容简介</h3>
+        <p>如果关于成功你听到的一切都是错的呢？在这场坦诚而私人的演讲中，讲者重新思考这个人人追逐的词——从 GPA、薪水、头衔与地位的「世界记分牌」，转向一个更好的定义：成为最好的自己，并一起让世界比你来时更好。</p><p>接着是讲台上少见的一幕：讲者诚实地讲述自己的失败。被拒多次后才获最佳论文奖的文章；十七年才走到教授；个人的错误、错过的机会与未能成功的尝试。每一个可见成功的水面之下，都沉着一大块看不见的拒绝、挫折与自我怀疑——结论很简单：最成功的人不是失败最少的人，而是从失败中学到最多的人。</p><p>从这些故事中提炼出成功永远教不会的五堂课——韧性、谦逊、同理心、终身学习与自我发现——以及给学生的五条建议：不要只追分数、跨出专业去探索、尽早且频繁地试错、经营人际关系、用天赋去创造改变。演讲以现场词云互动开场，以三个安静的承诺收尾：敢于梦想、敢于失败、敢于创造不同。</p>
+        <h3>核心主题</h3>
+        <ul class="themes"><li>成功的两种定义</li><li>名人的失败——以及讲者自己的</li><li>冰山：人们看到的与成就它的</li><li>来自失败的五堂课</li><li>知识、技能与态度——成功的学习者</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="talk" id="assessment">
+  <div class="wrap">
+    <p class="cat rv">演讲 04 · 教育 · 评估 · 学习分析</p>
+    <h2 class="rv">Data-Rich, Insight Poor?</h2>
+    <p class="tsub rv">在 AI 时代重新想象教育评估</p>
+    <div class="cols">
+      <div class="left rv">
+        <div class="frame"><img src="covers/deck-03.jpg" alt="Data-Rich, Insight Poor? — cover slide" draggable="false" oncontextmenu="return false"></div>
+        <div class="chips"><div class="chip"><small>时长</small><p>45–60 分钟；模块化章节可适配更短时段</p></div><div class="chip"><small>听众</small><p>教育工作者、教与学及评估负责人、质量保证与认证机构、教育科技社群</p></div><div class="chip"><small>曾发表于</small><p>2026 教育主题演讲系列（现行版本）</p></div><div class="chip"><small>规格</small><p>63 页 · 16:9 · 英文 · 互动破冰投票</p></div></div>
+      </div>
+      <div class="right rv">
+        <h3>内容简介</h3>
+        <p>大学从未掌握过如此多关于学习者的数据——但成绩单仍试图用一纸文件概括多年的学习，多数评估也只能捕捉学生某一时刻的能力快照。这场主题演讲追问：AI 与学习分析如何把丰富的数据变成对学习的真正洞察。</p><p>演讲先回顾我们如何走到今天：从口试辩难到标准化问责的评估简史、标准范式的结构性缺陷，以及成绩单无法记录的八个学习维度——从批判性思维到协作与个人成长。把 AI 映射到布鲁姆六层认知目标上，可以看清模型的强项与人类判断仍不可替代之处。</p><p>第二部分展示 AI 与学习分析如何应对这些挑战——节省时间与精力、个性化支持与早期干预、放大一位教师所能看见的范围、提升公平与客观——以「四问分析框架」与五级成熟度模型组织。演讲以一组大学自研的诚信、学习与评估平台为例，为院校提出四条务实路径。愿景是：持续、及时、个性化、自适应、可扩展、公平且高性价比的评估。</p>
+        <h3>核心主题</h3>
+        <ul class="themes"><li>标准评估范式的缺陷</li><li>布鲁姆认知层级上的 AI</li><li>学习分析框架与成熟度模型</li><li>学术诚信——学生、教师与院校视角</li><li>大学自研的诚信、学习与评估平台</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <span>© 2026 Alison Gao · Ink &amp; Gold</span>
+  <span><a href="index-zh.html">返回主页</a></span>
+</footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.08});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
